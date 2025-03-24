@@ -1,0 +1,15 @@
+102;Curuba;1359;
+100;Pitaya;1734;
+106;Banano;2871;
+103;Guanabana;1880;
+107;Maracuya;4104;
+102;Guanabana;3498;
+108;Fresa;1533;
+108;Pitaya;2252;
+101;Mango;1558;
+100;Piña;3815;
+103;Curuba;1448;
+101;Pitaya;823;
+102;Pitaya;4285;
+106;Mora;1994;
+106;Mora;493;
