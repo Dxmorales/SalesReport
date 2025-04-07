@@ -3,6 +3,7 @@ package SalesReport;
 import java.io.*;
 import java.util.Random;
 
+
 public class GenerateInfoFiles {
     static Random random = new Random();
 	static String[] typeOfDoc = { "CC", "CE" }; // type of doc for adults
@@ -17,6 +18,16 @@ public class GenerateInfoFiles {
 	public static void main(String[] args) {
         // Here we indicate the number of files you want to create, 
 		// taking into account that one will be created per seller
+		// we will be creating a folder called "data_output" to have organized our information on the code.
+		File folder = new File("data_output"); //this line of code works to create a file object called "data_output"
+		if (!folder.exists()) { //this validation check if the folder is already created or does not exist
+			boolean created = folder.mkdir(); //if it does not exist this line tries to create the folder - if not it will promt the system out message
+			if (created) {
+				System.out.println("Folder 'data_output' created"); //this will be the output in the terminal if the folder gets created
+			} else {
+				System.out.println("It was not possible to create 'data_output'"); //this will prompt if the folder can not be created.
+			}
+		}
 		createSalesMenFile(10); 
 		createProductFile(10);
 		createSalesManInfoFile(10);
@@ -30,7 +41,7 @@ public class GenerateInfoFiles {
 			    String typeDoc = typeOfDoc[random.nextInt(typeOfDoc.length)];
 			    String randNumberDoc = numberDoc[random.nextInt(numberDoc.length)];
 			    String products = productsSold(); // assigns to the products variable all the random information that the function created 
-			    String fileName = "salesMen_" + i + ".txt"; // Specify how the file will be called and the number based on the sellers created
+			    String fileName = "data_output/salesMen_" + i + ".txt"; // Specify how the file will be called and the number based on the sellers created - adding in this code we have created the folder called 'data_output' to contain this file .txt
 
 			// creates write flow on the file mentioned above
 			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
@@ -46,7 +57,7 @@ public class GenerateInfoFiles {
     // method for create file with list of products with Id, name and price
     public static void createProductFile(int productsCount){
 	  StringBuilder infoProducts = new StringBuilder(); // class for build and manage string
-	  String fileName = "productsFile.txt"; 
+	  String fileName = "data_output/productsFile.txt";  //this file will be contained in the folder data_output
 
 	  // Loop for Randomly recreate product data based on the quantity specified in productCount
       for (int i = 0; i < productsCount; i++){
@@ -64,7 +75,7 @@ public class GenerateInfoFiles {
     // method for create file with list of sellers 
 	public static void createSalesManInfoFile(int salesManCount){
 	    StringBuilder infoSellers = new StringBuilder();
-		String fileName = "infoSellers.txt";
+		String fileName = "data_output/infoSellers.txt";
 		 // Loop for Randomly recreate seller data based on the quantity specified in salesManCount
         for(int i = 0 ; i < salesManCount; i++){
 			String typeDoc = typeOfDoc[random.nextInt(typeOfDoc.length)];
