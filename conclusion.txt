@@ -1,0 +1,26 @@
+Lo aprendido durante el desarrollo en el proyecto.
+
+En este proyecto aprendimos a desarrollar un programa en Java que nos permite leer varios archivos con información de vendedores, 
+productos y ventas, organizarlos correctamente y generar reportes ordenados en archivos de texto. Pudimos aplicar buenas prácticas 
+de programación, como usar nombres claros para las variables, comentar adecuadamente el código y mantener una estructura limpia y 
+entendible. También aprendimos a crear datos de prueba de forma automática, validar que la información sea coherente y detectar errores
+en los archivos, como productos que no existen o cantidades negativas. Todo el proceso lo automatizamos sin necesidad de pedir datos 
+al usuario, y usamos GitHub para guardar y compartir nuestro trabajo. En general, este proyecto nos ayudó a mejorar nuestras habilidades 
+para trabajar con archivos, procesar información y escribir programas bien hechos en Java.
+
+Posibles aplicaciones en su vida profesional de las destrezas y conocimientos adquiridos y practicados durante el desarrollo del proyecto
+
+Todo lo que aprendimos en este proyecto puede ayudarnos bastante en un trabajo. Por ejemplo: si en algún empleo tenemos que manejar información
+ como listas de ventas, datos de productos o reportes, ya sabríamos cómo hacer un programa que organice todo eso automáticamente, sin tener
+ que hacerlo uno por uno. También podríamos detectar errores en los datos, como si algo no cuadra o si hay información mal escrita, lo que ayuda a 
+evitar problemas y a que el trabajo sea más confiable. Además, al usar GitHub, practicamos cómo trabajar en grupo, compartir avances y revisar 
+lo que hacen los demás, tal como se hace en muchas empresas. Todo esto nos prepara para adaptarnos mejor a trabajos donde se necesita usar la 
+computadora no solo para escribir o buscar cosas, sino para resolver problemas de forma más rápida, ordenada y profesional.
+
+Dificultades presentadas durante el desarrollo del proyecto. 
+
+Tuvimos algunas dificultades durante el proyecto. Una de ellas fue al momento de configurar Eclipse para poder correr el código correctamente.
+A varios nos costó que funcionara bien, y en algunos casos fue necesario cambiar de programa y usar Visual Studio Code. También nos tomó tiempo 
+investigar qué librerías y funciones podríamos usar para crear los archivos como se pedía, y entender qué tipo de datos era mejor para manejar
+la información en el código. Al inicio también fue complicado aprender a usar GitHub y lograr que se integrara bien con nuestro proyecto. Además,
+configurar Eclipse para que trabajara con Java 1.8 no fue fácil, y eso nos hizo perder algo de tiempo al comienzo.
